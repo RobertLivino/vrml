@@ -1,0 +1,110 @@
+#VRML V2.0 utf8
+
+#MICROFONE
+Transform {
+	children [
+		Shape{
+			geometry Sphere { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.1 0.1 0.1
+				}
+			}
+		}	
+	]
+	translation 0 3 0
+	scale 1.5 1.5 1.5
+}
+
+Transform {
+	children [
+		Shape{
+			geometry Cylinder { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}	
+	]
+	translation 0 0 0
+	scale 1 4 1
+}
+
+#SORVETE 
+#morango
+Transform {
+	children [
+		Shape{
+			geometry Sphere { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 1 0.5 0.5
+				}
+			}
+		}	
+	]
+	translation 6 6 0
+	scale 2 2 2
+}
+
+#chocolate
+Transform {
+	children [
+		Shape{
+			geometry Sphere { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.33 0.22 0.18
+				}
+			}
+		}	
+	]
+	translation 6 3 0
+	scale 2 2 2
+}
+#casquinha
+Transform {
+	children [
+		Shape{
+			geometry Cone {
+                bottomRadius 1
+                height 2
+            }
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.75 0.60 0.5
+				}
+			}
+		}	
+	]
+	translation 6 -1.5 0
+	scale 1.5 3.4 1.5
+    rotation 1 0 0 3.14
+}
+#canudo
+Transform {
+	children [
+		Shape{
+			geometry Cylinder { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.75 0.60 0.5
+				}
+			}
+		}	
+	]
+	translation 6.4 7.2 0
+	scale 0.3 3 0.3
+    rotation 0 0 1 2.57
+}

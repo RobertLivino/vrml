@@ -1,0 +1,6 @@
+function color (r, g, b) {
+    r = r / 255
+    g = g / 255
+    b = b / 255
+    console.log(r.toFixed(2), g.toFixed(2), b.toFixed(2))
+}
