@@ -78,6 +78,7 @@ Transform {
 			geometry Cone {
                 bottomRadius 1
                 height 2
+				
             }
 			appearance Appearance{
 				material Material{

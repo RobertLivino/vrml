@@ -1,2 +1,606 @@
 #VRML V2.0 utf8
-dsadasdsadasdasdas
+
+DEF janela Group{
+    children[
+        Transform {
+	children [
+		Shape{
+			geometry Sphere { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.60 0.80 1.00
+				}
+			}
+		}	
+	]
+	
+}
+    ]
+}
+
+DEF orelha Group{
+    children[
+        Transform {
+	children [
+		Shape{
+			geometry Box { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.20 0.40 0.80
+				}
+			}
+		}	
+	]
+}
+    ]
+}
+
+
+#base
+Transform {
+	children [
+		Shape{
+			geometry Box { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 1.00 1.00 0.80
+				}
+			}
+		}	
+	]
+	translation 0 50 0
+	scale 800 150 400
+}
+
+#fundo
+Transform {
+	children [
+		Shape{
+			geometry Box { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0.5 1
+				}
+			}
+		}	
+	]
+	translation 0 300 -100
+	scale 1000 500 1
+}
+#casa do Bob Esponja
+Transform {
+	children [
+		Shape{
+			geometry Sphere { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 1.00 0.40 0.00
+				}
+			}
+		}	
+	]
+	translation 225 225 50
+	scale 40 70 40
+}
+
+#porta
+Transform {
+	children [
+		Shape{
+			geometry Sphere { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.60 0.80 1.00
+				}
+			}
+		}	
+	]
+	translation 225 210 87
+	scale 15 35 8
+}
+
+#janelas
+Transform{
+    children[
+        USE janela
+    ]
+    translation 210 270 80
+	scale 10 10 1
+    rotation 0 1 0 2.2
+    rotation 1 0 0 2.6
+}
+
+Transform{
+    children[
+        USE janela
+    ]
+    translation 255 230 90
+	scale 10 10 1
+    rotation 0 1 0 0.90
+}
+
+#coroa
+Transform {
+	children [
+		Shape{
+			geometry Cone {
+                bottomRadius 1
+                height 2
+				
+            }
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 1 0
+				}
+			}
+		}	
+	]
+	translation 225 300 50
+    scale 10 30 10
+}
+
+Transform {
+	children [
+		Shape{
+			geometry Cone {
+                bottomRadius 1
+                height 2
+				
+            }
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 1 0
+				}
+			}
+		}	
+	]
+	translation 215 300 50
+    scale 10 30 10
+    rotation 0 0 1 0.5
+}
+
+Transform {
+	children [
+		Shape{
+			geometry Cone {
+                bottomRadius 1
+                height 2
+				
+            }
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 1 0
+				}
+			}
+		}	
+	]
+	translation 235 300 50
+    scale 10 30 10
+    rotation 0 0 1 -0.5
+}
+
+
+#casa lula molusco
+Transform {
+	children [
+		Shape{
+			geometry Cylinder { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.00 0.20 0.60
+				}
+			}
+		}	
+	]
+	translation 0 225 50
+	scale 50 150 50
+    
+}
+
+#porta
+Transform {
+	children [
+		Shape{
+			geometry Sphere { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.38 0.25 0.13
+				}
+			}
+		}	
+	]
+	translation 0 210 100
+	scale 15 35 8
+}
+
+#nariz
+Transform {
+	children [
+		Shape{
+			geometry Box { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.20 0.40 0.80
+				}
+			}
+		}	
+	]
+	translation 0 300 100
+	scale 8 30 3
+}
+
+#sobrancelha
+Transform {
+	children [
+		Shape{
+			geometry Box { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.20 0.40 0.80
+				}
+			}
+		}	
+	]
+	translation 0 335 100
+	scale 30 5 5
+}
+
+#orelhas
+Transform{
+    children[
+        USE orelha
+    ]
+    translation 50 300 50
+	scale 8 30 10
+}
+
+Transform{
+    children[
+        USE orelha
+    ]
+    translation -50 300 50
+	scale 8 30 10
+}
+
+#janelas
+Transform{
+    children[
+        USE janela
+    ]
+    translation 20 315 100
+	scale 10 10 1
+}
+
+Transform{
+    children[
+        USE janela
+    ]
+    translation -20 315 100
+	scale 10 10 1
+}
+
+#casa do Patrick
+Transform {
+	children [
+		Shape{
+			geometry Sphere { 
+				size 2 2 2
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.40 0.12 0.12
+				}
+			}
+		}	
+	]
+	translation -225 200 50
+	scale 50 50 50
+}
+
+# Bob Esponja
+DEF bobEsponja Group {
+    children [
+        #corpo
+        Transform {
+        	children [
+        		Shape{
+        			geometry Box { 
+        				size 2 2 2
+        			}
+        			appearance Appearance{
+        				material Material{
+        					diffuseColor 0.99 0.99 0.00
+        				}
+        			}
+        		}	
+        	]
+        	translation 0 0 0
+        	scale 10 15 5
+        }
+        # 
+
+        #calça
+        Transform {
+            children [
+                Shape{
+                    geometry Box {
+                        size 2 2 2
+                    }
+                    appearance Appearance{
+                        material Material{
+                            diffuseColor 0.74 0.49 0.04
+                        }
+                    }
+                }	
+            ]
+            translation 0 -12.5 0
+            scale 10.1 3 5.5
+        }
+
+        # gravata
+        Transform{
+	        children[
+	        	Shape{
+	        		appearance Appearance{
+	        			material Material{
+	        				diffuseColor 0.99 0.17 0.17
+	        			}
+	        		}
+        
+	        		geometry  IndexedFaceSet{
+	        			coord Coordinate{
+	        				point[
+	        					0 -13 6
+	        					0 -15 5
+	        					-3 -13 5
+	        					0 -11 5
+	        					3 -13 5
+	        				]
+	        			}
+	        			coordIndex[
+	        				0, 1, 2,-1
+	        				0, 2, 3,-1
+	        				0, 2, 3,-1
+	        				0, 1, 4,-1
+	        				0, 4, 3,-1
+	        			]
+	        		}
+	        	}
+	        ]
+            rotation 0 0 1 1.57
+            translation -13 -12.5 0
+        }
+
+        Transform {
+            children [
+                Shape{
+                    geometry Box {
+                        size 2 2 2
+                    }
+                    appearance Appearance{
+                        material Material{
+                            diffuseColor 0.99 0.17 0.17
+                        }
+                    }
+                }	
+            ]
+            translation 0 -10.3 5.5
+            scale 0.3 1 0.3
+        }
+
+        #braços
+        DEF bobEsponjaBracos Group {
+            children [
+                Transform {
+                    children [
+                        Shape{
+                            geometry Cylinder {
+                                size 2 2 2
+                            }
+                            appearance Appearance{
+                                material Material{
+                                    diffuseColor 0.99 0.99 0.00
+                                }
+                            }
+                        }	
+                    ]
+                    translation -12 2 0
+                    scale 0.7 10 0.7
+                    rotation 0 0 1 2.14
+                }
+            ]
+        }
+        Transform{
+            translation 24 4.7 0
+            children[
+                USE bobEsponjaBracos
+    	    ]
+            rotation 1 0 0 3.14
+        }
+        # 
+
+        #pernas
+        DEF bobEsponjaPernas Group {
+            children [
+                Transform {
+                    children [
+                        Shape{
+                            geometry Cylinder {
+                                size 2 2 2
+                            }
+                            appearance Appearance{
+                                material Material{
+                                    diffuseColor 0.99 0.99 0.00
+                                }
+                            }
+                        }	
+                    ]
+                    translation -3 -15 0
+                    scale 0.7 10 0.7
+                }
+            ]
+        }
+        Transform{
+            translation 6 0 0
+            children[
+                USE bobEsponjaPernas
+    	    ]
+        }
+        # 
+
+        #sapatos
+        DEF bobEsponjaSapatos Group {
+            children [
+                #Meia
+                Transform {
+                    children [
+                        Shape{
+                            geometry Cylinder {
+                                size 2 2 2
+                            }
+                            appearance Appearance{
+                                material Material{
+                                    diffuseColor 1 1 1 
+                                }
+                            }
+                        }	
+                    ]
+                    translation -3 -21.7 0
+                    scale 0.8 3 0.8
+                }
+                #listras azul
+                Transform {
+                    children [
+                        Shape{
+                            geometry Cylinder {
+                                size 2 2 2
+                            }
+                            appearance Appearance{
+                                material Material{
+                                    diffuseColor 0.17 0.50 0.99 
+                                }
+                            }
+                        }	
+                    ]
+                    translation -3 -20 0
+                    scale 0.81 0.2 0.81
+                }
+
+                #listra vermelha
+                Transform {
+                    children [
+                        Shape{
+                            geometry Cylinder {
+                                size 2 2 2
+                            }
+                            appearance Appearance{
+                                material Material{
+                                    diffuseColor 0.99 0.17 0.17 
+                                }
+                            }
+                        }	
+                    ]
+                    translation -3 -20.7 0
+                    scale 0.81 0.2 0.81
+                }
+                # inicio do sapato
+                Transform {
+                    children [
+                        Shape{
+                            geometry Sphere {
+                                size 2 2 2
+                            }
+                            appearance Appearance{
+                                material Material{
+                                    diffuseColor 0 0 0 
+                                }
+                            }
+                        }	
+                    ]
+                    translation -3 -25 0
+                    scale 1 0.7 1
+                }
+                #sapato
+                Transform {
+                    children [
+                        Shape{
+                            geometry Cylinder {
+                                size 2 2 2
+                            }
+                            appearance Appearance{
+                                material Material{
+                                    diffuseColor 0 0 0 
+                                }
+                            }
+                        }	
+                    ]
+                    translation -3 -26 0
+                    scale 0.8 0.7 0.8
+                }
+
+                Transform {
+                    children [
+                        Shape{
+                            geometry Cylinder {
+                                size 2 2 2
+                            }
+                            appearance Appearance{
+                                material Material{
+                                    diffuseColor 0 0 0 
+                                }
+                            }
+                        }	
+                    ]
+                    translation -3 -26 1.5
+                    scale 0.8 1 0.8
+                    rotation 1 0 0 1.57
+                }
+
+                Transform {
+                    children [
+                        Shape{
+                            geometry Sphere {
+                                size 2 2 2
+                            }
+                            appearance Appearance{
+                                material Material{
+                                    diffuseColor 0 0 0 
+                                }
+                            }
+                        }	
+                    ]
+                    translation -3 -25.8 2.3
+                    scale 1 1 1
+                }
+            ]
+        }
+        Transform{
+            translation 6 0 0
+            children[
+                USE bobEsponjaSapatos
+    	    ]
+        }
+        # 
+    ]
+    translation 250 227 110
+}
